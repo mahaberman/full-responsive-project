@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONO -->
+        <link rel="shortcut icon" href="../assets/favicon-16x16.png" type="image/x-icon">
+        <!-- FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <!-- CSS PERSONALIZADO -->
+        <link rel="stylesheet" href="../css/style.css">
+    <title>Entre Lineas</title>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <nav>
+            <!--logo y favicon a modo de ejemplo hasta tener el propio-->
+            <div class="logo">
+               <a href="../index.html"><img src="../assets/logo.jpg" alt="logo prueba"></a> 
+            </div>
+            
+            <ul class="menu">
+                <li><a href="como-funciona.html">¿Cómo funciona?</a></li>
+                <li><a href="experiencia.html">Experiencias</a></li>
+                <li><a href="libreria.html">Librería</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            </ul>
+    
+            <a href="asociate.html" class="btn-action">Asociate</a>
+        
+            <!-- ICONO MENU HAMBURGESA-->
+         <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        </nav>
+    </header>
+    <!-- FIN ENCABEZADO -->
+    
+    <main>
+        <section class="seccion-form">
+            <h2 class="titulo-seccion">Completá el formulario y serás parte de Entre líneas</h2>
+            <div class="contenedor">
+                <form id="backForm" action="procesar.php" method="post">
+        
+                    <fieldset>
+                        <legend>Formulario de suscripción</legend>
+                    <div class="form-group">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" placeholder="ingresa tu nombre">
+                    </div>
+                    
+                    
+            
+                <div class="form-group">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" placeholder="ingresa tu apellido">
+                </div>
+            
+            
+                   <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" placeholder="Ingresa tu correo" required>
+                   </div>
+            
+                    <div class="form-group">
+                        <label for="telefono">Telefono: </label>
+                        <input type="tel" name="telefono" placeholder="Ingresa tu telefono">
+                    </div>
+        
+                    <h4>Tipo de suscripción</h4>    
+        
+                <select name="select-tipo" id="">
+                    <option value="Infantil">Infantil</option>
+                    <option value="Ficcion">Ficcion</option>
+                    <option value="No Ficcion"> No Ficción</option>
+                </select> 
+        
+                    <!--Checkbox-->
+                    <h4>Intereses</h4>
+                    <div class="contenedor-intereses">
+                        <div class="col-1">
+                            <div class="form-group">
+                                <label for="género">Narrativa</label>
+                                <input type="checkbox" name="género" value="Narrativa">
+                            </div>
+                            <div class="form-group">
+                                <label for="género">Ciencia ficción</label>
+                                <input type="checkbox" name="género" value="Ficcion">
+                            </div>
+                            <div class="form-group">
+                                <label for="coleccion">Poesia</label>
+                                <input type="checkbox" name="coleccion" value="Poesia">
+                            </div>
+                            <div class="form-group">
+                                <label for="coleccion">Literatura del yo</label>
+                                <input type="checkbox" name="coleccion" value="Literatura del yo">
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="form-group">
+                                <label for="género">Crónica</label>
+                                <input type="checkbox" name="género" value="Crónica">
+                            </div>
+                            <div class="form-group">
+                                <label for="género">Relatos</label>
+                                <input type="checkbox" name="género" value="Relatos">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="género">Divulgación Científica/Filosófica</label>
+                                <input type="checkbox" name="género" value="Divulgación Científica/Filosófica">
+                            </div>
+                            <div class="form-group">
+                                <label for="género"> Otros</label>
+                                <input type="checkbox" name="género" value="Otros">
+                            </div>
+                        </div>
+                    </div>
+                   
+                
+                    
+                 
+                    <!--Botones-->
+                    <p><input type="submit" value="Enviar"></p>
+                    <p><input type="reset" value="Borrar Formulario"></p>
+        
+            
+                </fieldset>
+                </form>
+                <div class="img-descriptiva">
+                    <img src="../assets/libros.jpg" alt="">
+                </div>
+            </div>
+        </section>
+       
+    </main>
+    
+    <footer>
+        <div class="contenedor">
+            <div class="info-contacto">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Av siempre viva 346</li>
+                    <li><i class="fa-solid fa-phone"></i> 4511123455 </li>
+                    <li><i class="fa-solid fa-envelope"></i> contacto@entrelineas.com</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <img src="#" alt="">
+                <p>Todos los derechos reservados 2022</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.spotify.com"><i class="fa-brands fa-spotify"></i></a>
+            
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/"> <i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
