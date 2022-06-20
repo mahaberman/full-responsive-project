@@ -596,28 +596,34 @@ blockquote{
 
 
 
-/* MEDIAQUERYS TABLET */
+
+    
+   /* MEDIAQUERYS TABLET */
 @media screen and (min-width: 600px) and (max-width:960px) {
     /* NAV */
     nav{
-        grid-template-columns: repeat(8,1fr)!important;
+        grid-template-columns: repeat(12,1fr)!important;
+        font-size: 13px;  
     }
     nav .logo{
-        grid-column: 2/3;
+        padding-left: 30px;
+        grid-column: 1/3;
     }
+
     nav .menu{
-        display: none;
+        grid-column: 3/10;
+
     }
-    nav .btn-action{
-        display: none;
-    }
-    nav .menu-bar{
-        display: block!important;
-        grid-column: 8/9;
-    }
+     
     nav .menu-bar i{
         font-size: 28px;
         color: #fff;
+    }
+
+    header .btn-action{
+        grid-column: 11/13;
+        font-size: 15px;
+        width: 65px;
     }
     /* PAGINA LIBRERIA */
     .pagina-libreria .libro__hover{
